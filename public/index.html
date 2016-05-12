@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>URL Shortener</title>
+  <link rel="stylesheet" type="text/css" href="bower_components/Materialize/dist/css/materialize.min.css"></link>
+  <link rel="stylesheet" type="text/css" href="css/main.css"></link>
+</head>
+
+<body>
+  <div class="container">
+    <h1>URL Shortener - FreeCodeCamp</h1>
+
+    <div class="row">
+      <blockquote>
+        <h4>User Stories:</h4>
+        <ol>
+          <li>I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.</li>
+          <li>If I pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead.</li>
+          <li>When I visit that shortened URL, it will redirect me to my original link.</li>
+        </ol>
+      </blockquote>
+    </div>
+    
+    <div class="row">
+      <h4>Creation example:</h4>
+      <div class="col s6">
+        <div class="wrapper" name="usage">
+          <div class="content">
+            https://little-url.herokuapp.com/new/https://www.google.com
+          </div>
+        </div>
+      </div>
+      <div class="col s6">
+        <div class="wrapper" name="output">
+          <div class="content">
+            { "original_url":"https://www.google.com", "short_url":"https://little-url.herokuapp.com/8170" }
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <h4>Usage example:</h4>
+      <div class="col s6">
+        <div class="wrapper" name="usage">
+          <div class="content">
+            https://little-url.herokuapp.com/8170
+          </div>
+        </div>
+      </div>
+      <div class="col s6">
+        <div class="wrapper" name="redirect">
+          <div class="content">
+            https://www.google.com
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="application/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="application/javascript" src="bower_components/Materialize/dist/js/materialize.min.js"></script>
+</body>
+
+</html>

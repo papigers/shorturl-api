@@ -1,0 +1,23 @@
+{
+  "name": "shorturl-api",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "Gershon Papi"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Materialize": "materialize#^0.97.6"
+  }
+}

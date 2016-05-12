@@ -1,0 +1,25 @@
+{
+  "name": "shorturl-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "bower install",
+    "start": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/papigers/shorturl-api.git"
+  },
+  "author": "Gershon Papi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/papigers/shorturl-api/issues"
+  },
+  "homepage": "https://github.com/papigers/shorturl-api#readme",
+  "dependencies": {
+    "bower": "^1.7.9",
+    "express": "^4.13.4"
+  }
+}
