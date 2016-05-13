@@ -9,7 +9,7 @@ function findUniqueId(coll, random, cb){
     }
     else{
       if(res){
-        var rnd = Math.floor(Math.random()*4000);
+        var rnd = Math.floor(Math.random()*10000);
         findUniqueId(coll, rnd, cb);
       }
       else{
@@ -20,7 +20,7 @@ function findUniqueId(coll, random, cb){
 };
 
 exports.insert = function(coll, url, cb){
-  findUniqueId(coll, Math.floor(Math.random()*4000), function(err, id){
+  findUniqueId(coll, Math.floor(Math.random()*10000), function(err, id){
     if(err)
       cb(err);
     else
